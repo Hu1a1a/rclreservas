@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - Travel Booking HTML Template</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/jquery.autocomplete.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!-- ================================
+            START HEADER AREA
+================================= -->
+<header class="header-area">
+    <div class="header-top-bar padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-left">
+                            <ul class="list-items">
+                                <li><a href="#"><i class="la la-phone mr-1"></i>(123) 123-456</a></li>
+                                <li><a href="#"><i class="la la-envelope mr-1"></i>trizen@example.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-right d-flex align-items-center justify-content-end">
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                        <option data-content='<span class="flag-icon flag-icon-id mr-1"></span> Bahasa Indonesia'>Bahasa Indonesia</option>
+                                        <option data-content='<span class="flag-icon flag-icon-de mr-1"></span> Deutsch'>Deutsch</option>
+                                        <option data-content='<span class="flag-icon flag-icon-us mr-1"></span> English(US)' selected>English US</option>
+                                        <option data-content='<span class="flag-icon flag-icon-gb-eng mr-1"></span> English(UK)'>English UK</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ro mr-1"></span> Romanian'>Romanian</option>
+                                        <option data-content='<span class="flag-icon flag-icon-es mr-1"></span> Español'>Español</option>
+                                        <option data-content='<span class="flag-icon flag-icon-fr mr-1"></span> Francais'>Francais</option>
+                                        <option data-content='<span class="flag-icon flag-icon-it mr-1"></span> Italiano'>Italiano</option>
+                                        <option data-content='<span class="flag-icon flag-icon-pl mr-1"></span> Polski'>Polski</option>
+                                        <option data-content='<span class="flag-icon flag-icon-pt mr-1"></span> Portuguese'>Portuguese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-tr mr-1"></span> Turkish'>Turkish</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ru mr-1"></span> Russian'>Russian</option>
+                                        <option data-content='<span class="flag-icon flag-icon-jp mr-1"></span> Japanese'>Japanese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-cn mr-1"></span> Mandarin'>Mandarin</option>
+                                        <option data-content='<span class="flag-icon flag-icon-tw mr-1"></span> Mandarin Chinese'>Mandarin Chinese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-kr mr-1"></span> Korean'>Korean</option>
+                                        <option data-content='<span class="flag-icon flag-icon-in mr-1"></span> Hindi'>Hindi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                        <option value="1">AED</option>
+                                        <option value="2">AUD</option>
+                                        <option value="3">BRL</option>
+                                        <option value="4">CAD</option>
+                                        <option value="5">CHF</option>
+                                        <option value="6">CNY</option>
+                                        <option value="7">EUR</option>
+                                        <option value="8">GBP</option>
+                                        <option value="9">HKD</option>
+                                        <option value="10">IDR</option>
+                                        <option value="11">INR</option>
+                                        <option value="12">JPY</option>
+                                        <option value="13">KRW</option>
+                                        <option value="14">MYR</option>
+                                        <option value="15">NZD</option>
+                                        <option value="16">PHP</option>
+                                        <option value="17">PLN</option>
+                                        <option value="18">RUB</option>
+                                        <option value="19">SAR</option>
+                                        <option value="20">SGD</option>
+                                        <option value="21">THB</option>
+                                        <option value="22">TRY</option>
+                                        <option value="23">TWD</option>
+                                        <option value="24" selected>USD</option>
+                                        <option value="25">VND</option>
+                                        <option value="26">MXN</option>
+                                        <option value="27">ARS</option>
+                                        <option value="28">INR</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">Sign Up</a>
+                                 <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu-wrapper padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="index.html">Home - main</a></li>
+                                            <li><a href="index2.html">Home - Hotel</a></li>
+                                            <li><a href="index3.html">Home - Activity</a></li>
+                                            <li><a href="index4.html">Home - Car</a></li>
+                                            <li><a href="index5.html">Home - Cruise</a></li>
+                                            <li><a href="index6.html">Home - Flight</a></li>
+                                            <li><a href="index7.html">Home - City Tour</a></li>
+                                            <li><a href="index8.html">Home - Bus <span class="badge bg-2 text-white">New</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="tour-fullwidth.html">Tour Full width</a></li>
+                                            <li><a href="tour-grid.html">Tour Grid</a></li>
+                                            <li><a href="tour-list.html">Tour List</a></li>
+                                            <li><a href="tour-left-sidebar.html">Tour Left Sidebar</a></li>
+                                            <li><a href="tour-right-sidebar.html">Tour Right Sidebar</a></li>
+                                            <li><a href="tour-details.html">Tour details</a></li>
+                                            <li><a href="tour-booking.html">Tour Booking</a></li>
+                                            <li><a href="tour-search-result.html">Tour Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cruise <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="cruises.html">Cruises</a></li>
+                                            <li><a href="cruises-list.html">Cruise list</a></li>
+                                            <li><a href="cruise-sidebar.html">Cruise Sidebar</a></li>
+                                            <li><a href="cruise-details.html">Cruise details</a></li>
+                                            <li><a href="cruise-booking.html">Cruise Booking</a></li>
+                                            <li><a href="cruise-search-result.html">Cruise Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pages <i class="la la-angle-down"></i></a>
+                                        <div class="dropdown-menu-item mega-menu">
+                                            <ul class="row no-gutters">
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="add-hotel.html">add hotel </a></li>
+                                                        <li><a href="add-flight.html">add flight </a></li>
+                                                        <li><a href="add-tour.html">add tour </a></li>
+                                                        <li><a href="add-cruise.html">add cruise </a></li>
+                                                        <li><a href="add-car.html">add car</a></li>
+                                                        <li><a href="user-dashboard.html">User Dashboard</a></li>
+                                                        <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                                                        <li><a href="career.html">career</a></li>
+                                                        <li><a href="route-map.html">route map<span class="badge bg-2 text-white">New</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="route.html">route<span class="badge bg-2 text-white">New</span></a></li>
+                                                        <li><a href="route-destination.html">route destination<span class="badge bg-2 text-white">New</span></a></li>
+                                                        <li><a href="career-details.html">career details</a></li>
+                                                        <li><a href="user-profile.html">User profile</a></li>
+                                                        <li><a href="become-local-expert.html">Become Local Expert</a></li>
+                                                        <li><a href="contact.html">contact</a></li>
+                                                        <li><a href="cart.html">Cart</a></li>
+                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                        <li><a href="recover.html">recover password</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="payment-received.html">payment received</a></li>
+                                                        <li><a href="payment-complete.html">payment complete</a></li>
+                                                        <li><a href="destinations.html">Destinations</a></li>
+                                                        <li><a href="about.html">about</a></li>
+                                                        <li><a href="services.html">Our Services</a></li>
+                                                        <li><a href="gallery.html">Gallery</a></li>
+                                                        <li><a href="pricing.html">pricing</a></li>
+                                                        <li><a href="faq.html">faq</a></li>
+                                                        <li><a href="add-new-post.html">add new post</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="blog-full-width.html">blog full width</a></li>
+                                                        <li><a href="blog-grid.html">blog grid</a></li>
+                                                        <li><a href="blog-sidebar.html">blog sidebar</a></li>
+                                                        <li><a href="blog-single.html">blog details</a></li>
+                                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                        <li><a href="page-404.html">404 page</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Flight <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="flight-grid.html">Flight grid</a></li>
+                                            <li><a href="flight-list.html">Flight list</a></li>
+                                            <li><a href="flight-sidebar.html">Flight sidebar </a></li>
+                                            <li><a href="flight-single.html">Flight details</a></li>
+                                            <li><a href="flight-booking.html">Flight Booking</a></li>
+                                            <li><a href="flight-search-result.html">Flight Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hotel <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="hotel-grid.html">Hotel grid</a></li>
+                                            <li><a href="hotel-list.html">Hotel list</a></li>
+                                            <li><a href="hotel-sidebar.html">Hotel sidebar </a></li>
+                                            <li><a href="hotel-single.html">Hotel details</a></li>
+                                            <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                                            <li><a href="hotel-search-result.html">Hotel Search Result</a></li>
+                                            <li>
+                                                <a href="#">Rooms <i class="la la-plus"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="room-list.html">Room List</a></li>
+                                                    <li><a href="room-grid.html">Room Grid</a></li>
+                                                    <li><a href="room-search-result.html">Search Result</a></li>
+                                                    <li><a href="room-search-result-list.html">Search Result list</a></li>
+                                                    <li><a href="room-details.html">Room Details</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">car <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="car-grid.html">car grid</a></li>
+                                            <li><a href="car-list.html">car list</a></li>
+                                            <li><a href="car-sidebar.html">car sidebar </a></li>
+                                            <li><a href="car-single.html">car details</a></li>
+                                            <li><a href="car-booking.html">Car Booking</a></li>
+                                            <li><a href="car-search-result.html">Car Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                        <div class="nav-btn">
+                            <a href="become-local-expert.html" class="theme-btn">Become Local Expert</a>
+                        </div><!-- end nav-btn -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
+<!-- ================================
+         END HEADER AREA
+================================= -->
+
+<!-- ================================
+    START HERO-WRAPPER AREA
+================================= -->
+<section class="hero-wrapper hero-wrapper8">
+    <div class="hero-box hero-bg-7 after-none">
+        <div class="container">
+            <div class="breadcrumb-links bg-white-mask d-inline-block text-black py-1 px-3 rounded">
+                <a href="#">Home</a>
+                <span class="breadcrumb-pipe">ǀ</span>
+                <a href="#">Bus</a>
+                <span class="breadcrumb-pipe">ǀ</span>
+                <span>Tuzla</span>
+            </div><!-- end breadcrumb-links -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content">
+                        <div class="section-heading">
+                            <h2 class="sec__title bg-white-mask d-inline-block text-black py-2 px-3 rounded font-size-30">
+                                Bus to and from Tuzla
+                            </h2>
+                        </div>
+                    </div><!-- end hero-content -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-fields-container mt-4 shadow-sm">
+                        <div class="section-tab section-tab-2 pb-2">
+                            <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="one-way-tab" data-toggle="tab" href="#one-way" role="tab" aria-controls="one-way" aria-selected="true">
+                                        One way
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="round-trip-tab" data-toggle="tab" href="#round-trip" role="tab" aria-controls="round-trip" aria-selected="false">
+                                        Round Trip
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- end section-tab -->
+                        <div class="tab-content" id="myTabContent3">
+                            <div class="tab-pane show active" id="one-way" role="tabpanel" aria-labelledby="one-way-tab">
+                                <div class="contact-form-action search-input-group-wrap">
+                                    <form action="#" class="row align-items-center">
+                                        <div class="col-lg-5 pr-0">
+                                            <div class="d-flex align-items-center search-input-group">
+                                                <div class="input-box flex-grow-1 prepend-input-box">
+                                                    <label class="label-text">From</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-map-marker form-icon"></span>
+                                                        <input class="form-control prepend-input address-1" type="text" placeholder="Duisburg">
+                                                        <button class="icon-switch" type="button">
+                                                            <i class="la la-exchange"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="input-box flex-grow-1 append-input-box">
+                                                    <label class="label-text">To</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-map-marker form-icon"></span>
+                                                        <input class="form-control append-input address-2" type="text" placeholder="Tuzla">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-5 -->
+                                        <div class="col-lg-3 pr-0">
+                                            <div class="input-box">
+                                                <label class="label-text">Departure</label>
+                                                <div class="form-group">
+                                                    <span class="la la-calendar form-icon"></span>
+                                                    <input class="date-range form-control" type="text" name="daterange-single" readonly>
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-3 -->
+                                        <div class="col-lg-2 pr-0">
+                                            <div class="input-box">
+                                                <label class="label-text">Passengers/Bikes</label>
+                                                <div class="form-group">
+                                                    <div class="dropdown dropdown-contain gty-container">
+                                                        <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="adult" data-text="Adult" data-text-multi="Adults">0 Adult</span>
+                                                            -
+                                                            <span class="children" data-text="Child" data-text-multi="Children">0 Children</span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-wrap">
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Adults <span>from 15 years</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="adult_number" value="0">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Children <span>0 to 14 years</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="child_number" value="0">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Bikes <span>E-bikes are not allowed on buses.</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="bikes_number" value="0" class="qty-input">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end dropdown -->
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-2 -->
+                                        <div class="col-lg-2">
+                                            <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!-- end tab-pane -->
+                            <div class="tab-pane" id="round-trip" role="tabpanel" aria-labelledby="round-trip-tab">
+                                <div class="contact-form-action search-input-group-wrap">
+                                    <form action="#" class="row align-items-center">
+                                        <div class="col-lg-5 pr-0">
+                                            <div class="d-flex align-items-center search-input-group">
+                                                <div class="input-box flex-grow-1 prepend-input-box">
+                                                    <label class="label-text">From</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-map-marker form-icon"></span>
+                                                        <input class="form-control prepend-input address-1" type="text" placeholder="Duisburg">
+                                                        <button class="icon-switch" type="button">
+                                                            <i class="la la-exchange"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="input-box flex-grow-1 append-input-box">
+                                                    <label class="label-text">To</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-map-marker form-icon"></span>
+                                                        <input class="form-control append-input address-2" type="text" placeholder="Tuzla">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-5 -->
+                                        <div class="col-lg-3 pr-0">
+                                            <div class="d-flex align-items-center search-input-group">
+                                                <div class="input-box flex-grow-1">
+                                                    <label class="label-text">Departure</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-calendar form-icon"></span>
+                                                        <input class="date-range form-control prepend-input" type="text" name="daterange-single" readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="input-box flex-grow-1">
+                                                    <label class="label-text">Return</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-calendar form-icon"></span>
+                                                        <input class="date-range form-control append-input" type="text" name="daterange-single" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-3 -->
+                                        <div class="col-lg-2 pr-0">
+                                            <div class="input-box">
+                                                <label class="label-text">Passengers/Bikes</label>
+                                                <div class="form-group">
+                                                    <div class="dropdown dropdown-contain gty-container">
+                                                        <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="adult" data-text="Adult" data-text-multi="Adults">0 Adult</span>
+                                                            -
+                                                            <span class="children" data-text="Child" data-text-multi="Children">0 Children</span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-wrap">
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Adults <span>from 15 years</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="adult_number" value="0">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Children <span>0 to 14 years</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="child_number" value="0">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <div class="qty-box d-flex align-items-center justify-content-between">
+                                                                    <label>Bikes <span>E-bikes are not allowed on buses.</span></label>
+                                                                    <div class="qtyBtn d-flex align-items-center">
+                                                                        <div class="qtyDec"><i class="la la-minus"></i></div>
+                                                                        <input type="text" name="bikes_number" value="0" class="qty-input">
+                                                                        <div class="qtyInc"><i class="la la-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end dropdown -->
+                                                </div>
+                                            </div>
+                                        </div><!-- end col-lg-2 -->
+                                        <div class="col-lg-2">
+                                            <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!-- end tab-pane -->
+                        </div>
+                    </div><!-- end main-search-input -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section><!-- end hero-wrapper -->
+<!-- ================================
+    END HERO-WRAPPER AREA
+================================= -->
+
+<!-- ================================
+    START INFO AREA
+================================= -->
+<section class="info-area info-bg padding-top-140px padding-bottom-40px text-center bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="icon-box">
+                    <div class="info-icon after-none before-none font-size-40">
+                        <i class="la la-exclamation-circle"></i>
+                    </div><!-- end info-icon-->
+                    <div class="info-content pt-0">
+                        <h4 class="info__title font-size-16 font-weight-bold">Traveling during COVID-19</h4>
+                        <p>Find all the current information about our network.</p>
+                        <a href="#" class="btn-text text-color">Check here <i class="la la-angle-right ml-1"></i></a>
+                    </div><!-- end info-content -->
+                </div><!-- end icon-box -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3">
+                <div class="icon-box">
+                    <div class="info-icon after-none before-none font-size-40">
+                        <i class="la la-chair"></i>
+                    </div><!-- end info-icon-->
+                    <div class="info-content pt-0">
+                        <h4 class="info__title font-size-16 font-weight-bold">Comfort on board</h4>
+                        <p>Our buses are equipped with large and comfortable seats, a toilet, Wi-Fi.</p>
+                        <a href="#" class="btn-text text-color">Our onboard service <i class="la la-angle-right ml-1"></i></a>
+                    </div><!-- end info-content -->
+                </div><!-- end icon-box -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3">
+                <div class="icon-box">
+                    <div class="info-icon after-none before-none font-size-40">
+                        <i class="la la-map-marker"></i>
+                    </div><!-- end info-icon-->
+                    <div class="info-content pt-0">
+                        <h4 class="info__title font-size-16 font-weight-bold">Largest bus network in Europe</h4>
+                        <p>Choose from over 2,500 travel destinations in 35 countries.</p>
+                        <a href="#" class="btn-text text-color">Our route network <i class="la la-angle-right ml-1"></i></a>
+                    </div><!-- end info-content -->
+                </div><!-- end icon-box -->
+            </div><!-- end col-lg-3 -->
+             <div class="col-lg-3">
+                <div class="icon-box">
+                    <div class="info-icon after-none before-none font-size-40">
+                        <i class="la la-leaf"></i>
+                    </div><!-- end info-icon-->
+                    <div class="info-content pt-0">
+                        <h4 class="info__title font-size-16 font-weight-bold">Travel environmentally-friendly</h4>
+                        <p>Our efficient coaches are proven to have an excellent carbon footprint.</p>
+                        <a href="#" class="btn-text text-color">Bus travel and environment <i class="la la-angle-right ml-1"></i></a>
+                    </div><!-- end info-content -->
+                </div><!-- end icon-box -->
+            </div><!-- end col-lg-3 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+    END INFO AREA
+================================= -->
+
+<!-- ================================
+    START ROUTE AREA
+================================= -->
+<section class="route-area padding-top-80px padding-bottom-80px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="font-size-24 pb-4 text-black font-weight-bold">Popular Bus Routes</h2>
+            </div><!-- end col-lg-12 -->
+            <div class="col-lg-12">
+                <div class="card-item hover-y-none border">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="popular-connection-links">
+                                    <ul class="list-group list-group-flush list--group">
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Duisburg</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Županja</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="popular-connection-links">
+                                    <ul class="list-group list-group-flush list--group">
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Duisburg</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Županja</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="popular-connection-links">
+                                    <ul class="list-group list-group-flush list--group">
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Duisburg</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="list-group-link">
+                                                <div>Županja</div>
+                                                <div>Tuzla</div>
+                                                <span class="icon-circle-dep"></span>
+                                                <span class="icon-connect"></span>
+                                                <span class="icon-circle-arr"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-12">
+                                <div class="collapse" id="collapseMore">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="popular-connection-links">
+                                                <ul class="list-group list-group-flush list--group">
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Pforzheim</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Kutina</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Frankfurt</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-lg-4 -->
+                                        <div class="col-lg-4">
+                                            <div class="popular-connection-links">
+                                                <ul class="list-group list-group-flush list--group">
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Pforzheim</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Kutina</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Frankfurt</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-lg-4 -->
+                                        <div class="col-lg-4">
+                                            <div class="popular-connection-links">
+                                                <ul class="list-group list-group-flush list--group">
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Pforzheim</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Kutina</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            <div>Frankfurt</div>
+                                                            <div>Tuzla</div>
+                                                            <span class="icon-circle-dep"></span>
+                                                            <span class="icon-connect"></span>
+                                                            <span class="icon-circle-arr"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-lg-4 -->
+                                    </div><!-- end row-->
+                                </div><!-- end collapse -->
+                            </div><!-- end col-lg-12 -->
+                        </div><!-- end row -->
+                    </div><!-- end card-body -->
+                </div><!-- end card-item -->
+                <div class="text-center">
+                    <a class="btn collapse-btn" data-toggle="collapse" href="#collapseMore" role="button" aria-expanded="false" aria-controls="collapseMore">
+                        <span class="collapse-text-show">View more bus routes</span>
+                        <span class="collapse-text-hide">View fewer bus routes</span>
+                        <i class="la la-angle-down ml-1"></i>
+                    </a>
+                </div>
+            </div><!-- end col-lg-12 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+    END ROUTE AREA
+================================= -->
+
+<!-- ================================
+    START ROUTE MAP AREA
+================================= -->
+<section class="route-map-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="font-size-24 pb-2 text-black font-weight-bold">Your Bus Stops in Tuzla</h2>
+                <p class="pb-4 d-flex align-items-center"><i class="la la-exclamation-circle font-size-24 mr-1"></i> Please note that there are 2 bus stops in Tuzla</p>
+            </div><!-- end col-lg-12 -->
+            <div class="col-lg-6">
+                <div class="map-container">
+                    <div id="destination-map" class="map"></div>
+                </div><!-- end map-container -->
+            </div><!-- end col-lg-6 -->
+             <div class="col-lg-6">
+                 <ul class="list-group list-group-flush list--group bus-stop-overview padding-left-30px">
+                     <li class="list-group-item mx-0 mb-1 active" id="destination_marker_1">
+                         <a href="javascript:void(0)" class="list-group-link d-flex align-items-center">
+                             <i class="la la-map-marker mr-1 icon-marker font-size-24"></i> Tuzla <i class="la la-angle-down icon-arrow"></i>
+                         </a>
+                         <div class="bus-stop-overview-content">
+                             <address class="bus-stop-overview-content__address mb-0">
+                                 <span>Bosne Srebrene 60</span>
+                                 <span>Autobuska stanica</span>
+                                 <span>75000 Tuzla</span>
+                                 <span>Bosnia &amp; Herzegovina</span>
+                             </address>
+                             <div class="bus-stop-shop-btn-box text-right pb-4">
+                                 <a class="btn theme-btn theme-btn-small shop-btn w-25 line-height-28" href="#">Book now</a>
+                             </div>
+                         </div>
+                     </li>
+                     <li class="list-group-item mx-0 mb-1" id="destination_marker_2">
+                         <a href="javascript:void(0)" class="list-group-link d-flex align-items-center">
+                             <i class="la la-map-marker mr-1 icon-marker font-size-24"></i> Tuzla (Globtour ured) <i class="la la-angle-down icon-arrow"></i>
+                         </a>
+                         <div class="bus-stop-overview-content">
+                             <address class="bus-stop-overview-content__address mb-0">
+                                 <span>Bosne Srebrne 58</span>
+                                 <span>75000 Tuzla</span>
+                                 <span>75000 Tuzla</span>
+                                 <span>Bosnia & Herzegovina</span>
+                             </address>
+                             <div class="bus-stop-shop-btn-box text-right pb-4">
+                                 <a class="btn theme-btn theme-btn-small shop-btn w-25 line-height-28" href="#">Book now</a>
+                             </div>
+                         </div>
+                     </li>
+                 </ul>
+            </div><!-- end col-lg-6 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end route-map-area -->
+<!-- ================================
+    END ROUTE MAP AREA
+================================= -->
+
+<!-- ================================
+    START ROUTE AREA
+================================= -->
+<section class="route-area padding-top-80px padding-bottom-50px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="font-size-24 pb-4 text-black font-weight-bold">Quick information about Tuzla</h2>
+            </div><!-- end col-lg-12 -->
+            <div class="col-lg-12">
+                <div class="table-form table-responsive info-table margin-bottom-60px">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Bus ticket from</td>
+                                <td>€ 25</td>
+                            </tr>
+                            <tr>
+                                <td>Number of cities reachable directly from Tuzla</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>Number of bus stops in Tuzla</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>Bosnia & Herzegovina</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- end routes -->
+            </div><!-- end col-lg-12 -->
+            <div class="col-lg-12">
+                <div class="card-item border hover-y-none card-item-list">
+                    <div class="card-img">
+                        <a href="#" class="d-block">
+                            <img src="images/regional-destinations.jpg" alt="bus connection img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title pb-4 font-weight-bold">FlixBus cities near Tuzla</h3>
+                        <ul class="list-group list-group-flush list--group">
+                            <li class="list-group-item"><a href="#" class="list-group-link d-flex align-items-center justify-content-between">Srebrenik Bus <i class="la la-angle-right"></i></a></li>
+                            <li class="list-group-item"><a href="#" class="list-group-link d-flex align-items-center justify-content-between">Ormanica Bus <i class="la la-angle-right"></i></a></li>
+                            <li class="list-group-item"><a href="#" class="list-group-link d-flex align-items-center justify-content-between">Gračanica Bus <i class="la la-angle-right"></i></a></li>
+                            <li class="list-group-item"><a href="#" class="list-group-link d-flex align-items-center justify-content-between">Brčko Bus <i class="la la-angle-right"></i></a></li>
+                            <li class="list-group-item"> <a href="#" class="list-group-link d-flex align-items-center justify-content-between">Maglaj Bus <i class="la la-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- end card-item -->
+            </div><!-- end col-lg-12 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+    END ROUTE AREA
+================================= -->
+
+<!-- ================================
+    END SCROLLPY AREA
+================================= -->
+<section class="scrollpy-area padding-bottom-90px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="font-size-24 pb-4 text-black font-weight-medium">About Bus Station Tuzla</h2>
+            </div>
+        </div><!-- end row -->
+        <div class="card-item p-5 border hover-y-none">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="list-items" id="sticky-nav">
+                        <li class="active"><a href="#how-to-get">How to get to the bus station?</a></li>
+                        <li><a href="#what-can-i-find">What can I find there?</a></li>
+                        <li><a href="#time-to-spare">Time to spare</a></li>
+                        <li><a href="#ok-i-have-no-luggage-what-now">OK, I have no luggage, what now</a></li>
+                        <li><a href="#where-to-go-next">Where to go next?</a></li>
+                    </ul>
+                </div><!-- end col-lg-3 -->
+                <div class="col-lg-9">
+                    <div class="spy-section-wrap">
+                        <div class="spy-section pb-4" id="how-to-get">
+                            <h3 class="font-size-24 pb-3 text-black">How to get to the bus station?</h3>
+                            <p>Bus station Tuzla is located at Bosne Srebrene 60. <em>For those who come to the city for the first time, it is good to know that the bus station is located 3.5 kilometers from the city center, which takes about 10 minutes by car.</em></p>
+                            <p>Since it's not a negligible distance, it's best to call Taxi in case you don't have a family or friends who could drop you off. There are many taxi companies in Tuzla, so you won't be in a problem if you book your car at the last minute. Those who are lucky, so the issue of transportation has resolved, need to know that there is a car park near the bus station at a cost of 1.02 EUR / 2 KM per hour for the first two hours, and each subsequent hour is charged at a cost of 0.51 EUR / 1 KM.</p>
+                            <p><strong>If you're using a combined transport, know that nearby to Tuzla Bus Station there is the Tuzla Railway Station. It's less than 300 meters from the Tuzla Bus Station.</strong></p>
+                        </div><!-- end spy-section -->
+                        <div class="spy-section pb-4" id="what-can-i-find">
+                            <h3 class="font-size-24 pb-3 text-black">What can I find there?</h3>
+                            <p>The bus station Tuzla consists of 12 perons, and within the building, the passengers are free to use these facilities, the waiting room, wardrobe, bank, kiosks, and cafes.</p>
+                            <p><em>Apart from that, while they're waiting for their bus, passengers can use free internet access or Wi-Fi.</em></p>
+                            <p>Tuzla bus station also provides a display that provides passengers with information on the exact time of departure of the bus lines.</p>
+                            <blockquote class="blockquote blockquote-item blockquote--item">
+                                <p>If you want to leave your luggage in the wardrobe, know that this service charges 1.02 EUR / 2 KM for up to two hours of service usage, and each subsequent hour is charged at a price of 0.25 EUR / 0.5 KM. If you need to keep your luggage all day long, you should know that the price of the wardrobe for 24 hours is 3.57 EUR / 7 KM.</p>
+                            </blockquote>
+                            <p>The recent reconstruction of this bus station, built in the 1970s, provided passengers with a range of complementary facilities such as hairdresser, restaurant, tourist agency, fast food, rent a car service, exchange office, ATM ... Tuzla has got a modern bus station meets the needs of almost all passengers. <strong>Also, a new ticketing system is secured that facilitates the process itself to both passengers and employees. By this, Bosnia and Herzegovina get a modernly equipped bus station.</strong></p>
+                        </div><!-- end spy-section -->
+                        <div class="spy-section pb-4" id="time-to-spare">
+                            <h3 class="font-size-24 pb-3 text-black">Time to spare</h3>
+                            <p><em>Tuzla is one of the oldest settlements in Europe. It's interesting that the name of the town comes from the Turkish language and means the Solana. To make the most of Tuzla experience, we will highlight some of its interesting features.</em> First and the most importantly preserved, sacred objects. For example Turalibegova or Polish mosque, Hadžihasanova or Čaršijska mosque, Djevojačka or Jalska mosque.</p>
+                            <blockquote class="blockquote blockquote-item blockquote--item">
+                                <p>In addition to this, many cultural institutions will be highlighted: National Theater Tuzla, Historical Archives, National and University Library, Behram beg library, International Gallery of Portraits Ismet Mujezinović and East Bosnia Museum.</p>
+                            </blockquote>
+                            <p>You can say that you were in Tuzla even if you were only passing through the car window while you were passing through it, but you can't say that you met Tuzla until you've visited at least some of these locations in the city, Panonian Lakes, and Archaeological Park, then Trg freedom, as well as Soni Square.</p>
+                        </div><!-- end spy-section -->
+                        <div class="spy-section pb-4" id="ok-i-have-no-luggage-what-now">
+                            <h3 class="font-size-24 pb-3 text-black">OK, I have no luggage, what now?</h3>
+                            <p>When you solve the baggage question whether you left it in the wardrobe, whether you left it in your hotel room, that is the right time for a city tour. If you're tired of sight-seeing, sit in one of the many coffee bars and then later continue your walk.</p>
+                            <p><em>As for specific dishes, in Tuzla, you'll encounter all kinds of food. It's certainly a tip to try what you haven't had the chance to try, even at a price you don't like. Even the bus station itself has a restaurant so if you don't have too much time or you're simply overwhelmed, sit there and enjoy the delicious bites.</em></p>
+                        </div><!-- end spy-section -->
+                        <div class="spy-section pb-4" id="where-to-go-next">
+                            <h3 class="font-size-24 pb-3 text-black">Where to go next?</h3>
+                            <p><em>Tuzla abounds in long-distance and international routes. The most popular intercity lines from Tuzla are those who go to these towns: Gradačac, Kalesija, Milići, Modriča, Ormanica, Šekovići and Vlasenica. Popular international routes lead to Berlin, Dortmund, Frankfurt, Hamburg, Hanover, Leipzig and Mannheim.</em></p>
+                            <p>In case you can't decide on your next destination, we suggest you visit Sarajevo as the center of Bosnia and Herzegovina, or Zagreb, which is, on the other hand, the center for Croatia. Both of these cities, abound with lines that further lead you to other cities in Europe. But, in addition, these are the cities of an intersection of history and culture for their states. <strong>Of course, besides Zagreb, Croatia offers a wealth of interesting content in these cities: Rijeka, Pula, Zadar, Šibenik, and Dubrovnik, so consider them too.</strong></p>
+                        </div><!-- end spy-section -->
+                    </div>
+                </div><!-- end col-lg-9 -->
+            </div><!-- end row -->
+        </div><!-- end card-item -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+    END SCROLLPY AREA
+================================= -->
+
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+<section class="footer-area section-bg padding-top-100px padding-bottom-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <div class="footer-logo padding-bottom-30px">
+                        <a href="index.html" class="foot__logo"><img src="images/logo.png" alt="logo"></a>
+                    </div><!-- end logo -->
+                    <p class="footer__desc">Morbi convallis bibendum urna ut viverra. Maecenas consequat</p>
+                    <ul class="list-items pt-3">
+                        <li>3015 Grand Ave, Coconut Grove,<br> Cerrick Way, FL 12345</li>
+                        <li>+123-456-789</li>
+                        <li><a href="#">trizen@yourwebsite.com</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">Company</h4>
+                    <ul class="list-items list--items">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="blog-grid.html">News</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">Other Services</h4>
+                    <ul class="list-items list--items">
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Trizen.com Rewards</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">List My Hotel</a></li>
+                        <li><a href="#">All Hotels</a></li>
+                        <li><a href="#">TV Ads</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">Other Links</h4>
+                    <ul class="list-items list--items">
+                        <li><a href="#">USA Vacation Packages</a></li>
+                        <li><a href="#">USA Flights</a></li>
+                        <li><a href="#">USA Hotels</a></li>
+                        <li><a href="#">USA Car Hire</a></li>
+                        <li><a href="#">Create an Account</a></li>
+                        <li><a href="#">Trizen Reviews</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+        </div><!-- end row -->
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="term-box footer-item">
+                    <ul class="list-items list--items d-flex align-items-center">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="footer-social-box text-right">
+                    <ul class="social-profile">
+                        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                        <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <div class="section-block mt-4"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="copy-right padding-top-30px">
+                    <p class="copy__desc">
+                        &copy; Copyright Trizen <span id="get-year"></span> . Made with
+                        <span class="la la-heart"></span> by <a href="https://themeforest.net/user/techydevs/portfolio">TechyDevs</a>
+                    </p>
+                </div><!-- end copy-right -->
+            </div><!-- end col-lg-7 -->
+            <div class="col-lg-5">
+                <div class="copy-right-content d-flex align-items-center justify-content-end padding-top-30px">
+                    <h3 class="title font-size-15 pr-2">We Accept</h3>
+                    <img src="images/payment-img.png" alt="">
+                </div><!-- end copy-right-content -->
+            </div><!-- end col-lg-5 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end footer-area -->
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+
+<!-- start back-to-top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="Go top"></i>
+</div>
+<!-- end back-to-top -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">Sign Up</h5>
+                        <p class="font-size-14">Hello! Welcome Create a New Account</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">Username</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your username">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Email Address</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your email">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Password</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type password">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Repeat Password</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type again password">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">Register Account</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">Or Sign up Using</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="loginPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle2">Login</h5>
+                        <p class="font-size-14">Hello! Welcome to your account</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">Username</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your username">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Password</label>
+                                <div class="form-group mb-2">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your password">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="custom-checkbox mb-0">
+                                        <input type="checkbox" id="rememberchb">
+                                        <label for="rememberchb">Remember me</label>
+                                    </div>
+                                    <p class="forgot-password">
+                                        <a href="recover.html">Forgot Password?</a>
+                                    </p>
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">Login Account</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">Or Login Using</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/quantity-input.js"></script>
+<script src="js/gumshoe.polyfills.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/route-destination-map.js"></script>
+<script src="js/jquery.autocomplete.js"></script>
+<script src="js/autocomplete-script.js"></script>
+<script src="js/main.js"></script>
+<script>
+    /*======= spy =======*/
+    var spy = new Gumshoe('#sticky-nav a');
+
+</script>
+</body>
+</html>

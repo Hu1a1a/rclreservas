@@ -1,0 +1,19 @@
+<div class="head">
+    <ng-container *ngIf="true; else elseTemplate">
+        <app-front-head></app-front-head>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <app-panel-head></app-panel-head>
+    </ng-template>
+</div>
+<div class="body">
+    <router-outlet></router-outlet>
+</div>
+<div class="footer">
+    <ng-container *ngIf="true; else elseTemplate">
+        <app-front-footer></app-front-footer>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <app-panel-footer></app-panel-footer>
+    </ng-template>
+</div>

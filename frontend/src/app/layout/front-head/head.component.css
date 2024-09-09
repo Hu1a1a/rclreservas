@@ -1,0 +1,23 @@
+.label {
+  width: 100%;
+  height: 100px;
+  background-color: #29337c;
+  z-index: 1;
+}
+a {
+  color: white;
+}
+li {
+  margin: 0px 5px;
+}
+.dropdown-menu {
+  background-color: #29337c;
+}
+.navbar-collapse {
+  background-color: #29337c;
+  padding: 25px;
+  border-radius: 0px 0px 10px 10px;
+}
+.navbar-nav {
+  flex-direction: row;
+}

@@ -1,0 +1,26 @@
+h1 {
+  b {
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 48px;
+    font-family: Plus Jakarta Sans;
+    color: #29337c;
+  }
+}
+.filter {
+  height: 90px;
+}
+.button {
+  align-content: space-evenly;
+  text-align: -webkit-center;
+}
+
+.mostrar {
+  background-color: #29337c;
+  color: white;
+  border: 1px solid #29337c;
+  height: 40px;
+  width: 125px;
+  border-radius: 20px;
+  text-align: center;
+}

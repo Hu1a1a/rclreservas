@@ -1,0 +1,77 @@
+<!-- FILTRO -->
+<div style="position: relative; overflow: hidden;">
+    <div style="text-align-last: center;top: 10%;width: 100%;margin: 10px;">
+        <h1 class="Regular">ENCUENTRA TUS EXPERIENCIAS EN </h1>
+        <h1 class="Bold">UN SOLO SITIO</h1>
+        <br><br>
+        <div style="text-align: -webkit-center;">
+            <div class="filter">
+                <ul class="nav nav-tabs" style="border: 0;">
+                    <li class="nav-item" *ngFor="let item of servicio.Menu">
+                        <a class="nav-link active menu" aria-current="page"
+                            style="border: none;cursor: pointer;"
+                            [style.BackgroundColor]="item.Selected?'#FFBB37':'transparent'"
+                            [style.Color]="item.Selected?'white':'#29337c'"
+                            (click)="SelectNav(item)">
+                            <img [src]="item.Selected?item.s_icon:item.icon" alt
+                                style="width: 20px;height: 20px;">
+                            {{item.Name}}
+                        </a>
+                    </li>
+                </ul>
+                <div class="row filterscreen"
+                    style="background-color: #FFBB37;border-radius: 0px 0.375rem 0.375rem 0.375rem;">
+                    <ng-container *ngFor="let item of SeletecedType.Filter">
+                        <div class="col dropdown button">
+                            <div class="btn btn-light dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                [style.color]="item.Selected?'black':'gray'">
+                                <img [src]="item.icon" alt
+                                    style="width: 20px;height: 20px;filter: invert(0.6);">
+                                {{item.Selected || item.Label }}
+                            </div>
+                            <ul class="dropdown-menu">
+                                <ng-container *ngIf="item.Type==='Select'">
+                                    <li *ngFor="let opt of item.Selection">
+                                        <a class="dropdown-item"
+                                            (click)="item.Selected=opt">{{opt}}</a>
+                                    </li>
+                                </ng-container>
+                                <ng-container *ngIf="item.Type==='Date'">
+                                    <!-- Selector de fecha -->
+                                </ng-container>
+                            </ul>
+                        </div>
+                    </ng-container>
+                    <div class="button"
+                        style="text-align-last: right;cursor: pointer;"
+                        (click)="Buscar()">
+                        <img src="assets/Boton Buscar.png" alt>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/portada.jpg" alt
+        style="width: 100%;height: 100%;position: absolute;top: 0%;z-index: -1;background-position: bottom;object-fit: fill;object-position: top;">
+</div>
+<!-- FILTRO -->
+<br>
+<div>
+    <h2>
+        <img src="assets/icon/azul/eventos-azul.svg" alt
+            style="width: 35px;height: 35px;">
+        Conoce nuestros próximos eventos
+    </h2>
+    <app-component-carouselgroup [data]="Evento"></app-component-carouselgroup>
+</div>
+<div>
+    <h2>
+        <img src="assets/icon/azul/espacios-de-alquiler-azul.svg" alt
+            style="width: 35px;height: 35px;">
+        Visita los espacios de alquiler
+    </h2>
+    <app-component-carouselgroup
+        [data]="Alquiler"></app-component-carouselgroup>
+</div>

@@ -1,0 +1,37 @@
+/*==== gmaps ======*/
+.gmaps {
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+  }
+  #singleMap,
+  #map,
+  .map {
+    width: 100%;
+    height: 465px;
+  }
+  /*==== leaflet-bar ======*/
+  .leaflet-bar {
+    @include box-shadow(0 0 0 0);
+    a {
+      @include border-radius(4px);
+      border-bottom: 0;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      @include box-shadow(0 1px 5px rgba(0,0,0,.3));
+      margin-bottom: 4px;
+      font-size: $font-size-20;
+      &:hover {
+        @include border-radius(4px);
+        border-bottom: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background-color: $theme-color-2;
+        color: $white;
+      }
+    }
+  }

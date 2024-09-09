@@ -1,0 +1,14 @@
+<nav class="label">
+    <div class="row">
+        <a class="navbar-brand" href="#/">
+            <img src="assets/logo.png">
+        </a>
+    </div>
+    <div class="row navig">
+        <ng-container *ngFor="let item of menu.footer">
+            <div class="col-4 navig_item">
+                <a class="nav-link menu" [href]="item.Router">{{item.Name}}</a>
+            </div>
+        </ng-container>
+    </div>
+</nav>

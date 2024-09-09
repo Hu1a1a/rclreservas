@@ -1,0 +1,11 @@
+.button {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+.card {
+  margin: 20px 10px;
+}
